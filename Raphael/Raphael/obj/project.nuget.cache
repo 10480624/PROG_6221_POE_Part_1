@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "87LItiQBn3Y=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Student\\Documents\\PROG62121\\Raphael\\Raphael\\Raphael.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Student\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.22.1\\microsoft.visualstudio.azure.containers.tools.targets.1.22.1.nupkg.sha512"
+  ],
+  "logs": []
+}
