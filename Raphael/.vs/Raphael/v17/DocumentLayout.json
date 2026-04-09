@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Student\\Documents\\PROG62121\\Raphael\\",
+  "WorkspaceRootPath": "C:\\Users\\Student\\Documents\\PROG62121\\PROG_6221_POE_Part_1\\Raphael\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F07E943F-BC67-44AE-8CD1-906288DDC947}|Raphael\\Raphael.csproj|c:\\users\\student\\documents\\prog62121\\raphael\\raphael\\displayhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F07E943F-BC67-44AE-8CD1-906288DDC947}|Raphael\\Raphael.csproj|solutionrelative:raphael\\displayhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F07E943F-BC67-44AE-8CD1-906288DDC947}|Raphael\\Raphael.csproj|c:\\users\\student\\documents\\prog62121\\prog_6221_poe_part_1\\raphael\\raphael\\github\\workflows\\dotnet.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F07E943F-BC67-44AE-8CD1-906288DDC947}|Raphael\\Raphael.csproj|solutionrelative:raphael\\github\\workflows\\dotnet.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F07E943F-BC67-44AE-8CD1-906288DDC947}|Raphael\\Raphael.csproj|c:\\users\\student\\documents\\prog62121\\raphael\\raphael\\audiohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F07E943F-BC67-44AE-8CD1-906288DDC947}|Raphael\\Raphael.csproj|solutionrelative:raphael\\audiohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F07E943F-BC67-44AE-8CD1-906288DDC947}|Raphael\\Raphael.csproj|c:\\users\\student\\documents\\prog62121\\raphael\\raphael\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F07E943F-BC67-44AE-8CD1-906288DDC947}|Raphael\\Raphael.csproj|c:\\users\\student\\documents\\prog62121\\prog_6221_poe_part_1\\raphael\\raphael\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F07E943F-BC67-44AE-8CD1-906288DDC947}|Raphael\\Raphael.csproj|solutionrelative:raphael\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F07E943F-BC67-44AE-8CD1-906288DDC947}|Raphael\\Raphael.csproj|c:\\users\\student\\documents\\prog62121\\raphael\\raphael\\cyberbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F07E943F-BC67-44AE-8CD1-906288DDC947}|Raphael\\Raphael.csproj|c:\\users\\student\\documents\\prog62121\\prog_6221_poe_part_1\\raphael\\raphael\\cyberbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F07E943F-BC67-44AE-8CD1-906288DDC947}|Raphael\\Raphael.csproj|solutionrelative:raphael\\cyberbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F07E943F-BC67-44AE-8CD1-906288DDC947}|Raphael\\Raphael.csproj|c:\\users\\student\\documents\\prog62121\\prog_6221_poe_part_1\\raphael\\raphael\\audiohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F07E943F-BC67-44AE-8CD1-906288DDC947}|Raphael\\Raphael.csproj|solutionrelative:raphael\\audiohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F07E943F-BC67-44AE-8CD1-906288DDC947}|Raphael\\Raphael.csproj|c:\\users\\student\\documents\\prog62121\\prog_6221_poe_part_1\\raphael\\raphael\\displayhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F07E943F-BC67-44AE-8CD1-906288DDC947}|Raphael\\Raphael.csproj|solutionrelative:raphael\\displayhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "DisplayHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\PROG62121\\Raphael\\Raphael\\DisplayHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\PROG62121\\PROG_6221_POE_Part_1\\Raphael\\Raphael\\DisplayHelper.cs",
               "RelativeDocumentMoniker": "Raphael\\DisplayHelper.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\PROG62121\\Raphael\\Raphael\\DisplayHelper.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\PROG62121\\PROG_6221_POE_Part_1\\Raphael\\Raphael\\DisplayHelper.cs",
               "RelativeToolTip": "Raphael\\DisplayHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAAAJMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T18:56:04.687Z",
               "IsPinned": true,
@@ -44,39 +48,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "dotnet.yml",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\PROG62121\\PROG_6221_POE_Part_1\\Raphael\\Raphael\\github\\workflows\\dotnet.yml",
+              "RelativeDocumentMoniker": "Raphael\\github\\workflows\\dotnet.yml",
+              "ToolTip": "C:\\Users\\Student\\Documents\\PROG62121\\PROG_6221_POE_Part_1\\Raphael\\Raphael\\github\\workflows\\dotnet.yml",
+              "RelativeToolTip": "Raphael\\github\\workflows\\dotnet.yml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAxwBgAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-04-09T14:35:02.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AudioHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\PROG62121\\Raphael\\Raphael\\AudioHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\PROG62121\\PROG_6221_POE_Part_1\\Raphael\\Raphael\\AudioHelper.cs",
               "RelativeDocumentMoniker": "Raphael\\AudioHelper.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\PROG62121\\Raphael\\Raphael\\AudioHelper.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\PROG62121\\PROG_6221_POE_Part_1\\Raphael\\Raphael\\AudioHelper.cs",
               "RelativeToolTip": "Raphael\\AudioHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAzwBwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T18:56:22.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "CyberBot.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\PROG62121\\Raphael\\Raphael\\CyberBot.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\PROG62121\\PROG_6221_POE_Part_1\\Raphael\\Raphael\\CyberBot.cs",
               "RelativeDocumentMoniker": "Raphael\\CyberBot.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\PROG62121\\Raphael\\Raphael\\CyberBot.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\PROG62121\\PROG_6221_POE_Part_1\\Raphael\\Raphael\\CyberBot.cs",
               "RelativeToolTip": "Raphael\\CyberBot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T18:55:39.341Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\PROG62121\\Raphael\\Raphael\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Documents\\PROG62121\\PROG_6221_POE_Part_1\\Raphael\\Raphael\\Program.cs",
               "RelativeDocumentMoniker": "Raphael\\Program.cs",
-              "ToolTip": "C:\\Users\\Student\\Documents\\PROG62121\\Raphael\\Raphael\\Program.cs",
+              "ToolTip": "C:\\Users\\Student\\Documents\\PROG62121\\PROG_6221_POE_Part_1\\Raphael\\Raphael\\Program.cs",
               "RelativeToolTip": "Raphael\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T18:52:20.906Z",
               "EditorCaption": ""

@@ -1,29 +1,31 @@
 # Raphael — Cybersecurity Awareness Chatbot
 
-A command-line chatbot built in C# that educates South African citizens on cybersecurity awareness topics including phishing, password safety, and safe browsing.
+A command-line chatbot built in C# for the **PROG 6221 Portfolio of Evidence (Part 1)** .  
+Raphael educates South African citizens on cybersecurity topics including phishing, password safety, malware, and safe browsing.
 
-## Project Structure
+## 📋 Features
 
-| File | Purpose |
-|---|---|
-| `Program.cs` | Entry point creates CyberBot and starts the application |
-| `CyberBot.cs` | Core logic conversation flow, responses, input validation |
-| `DisplayHelper.cs` | All console visuals, colours, ASCII art, typing effect |
-| `AudioHelper.cs` | Audio playback WAV voice greeting on startup |
+- 🎤 **Voice Greeting** – Plays `greeting.wav` on startup using `System.Media.SoundPlayer`.  
+  Uses `AppContext.BaseDirectory` to locate the file reliably.
+- 🎨 **ASCII Art Header** – Displays a "RAPHAEL" logo in green with a decorative divider.
+- 💬 **Typing Effect** – Configurable `TypingDelay` property controls character output speed (30ms default).
+- 👤 **User Personalisation** – Asks for name with a validation loop; refuses empty input.
+- 🔐 **Cybersecurity Responses** – Keyword‑matched responses covering:
+  - Password safety
+  - Phishing (with SA‑specific mentions of banks and SARS)
+  - Safe browsing (HTTPS, public Wi‑Fi warnings)
+  - Malware and virus protection
+  - Purpose and topic help
+- ✅ **Input Validation** – Handles empty input gracefully via `DisplayHelper.ShowInvalidInputMessage()`.
+- 🧠 **Separation of Concerns** – Logic (`CyberBot`), UI (`DisplayHelper`), and audio (`AudioHelper`) are fully decoupled.
+- 🔁 **Continuous Integration** – GitHub Actions workflow verifies the project builds successfully on every push.
 
-## How to Run
-
-1. Clone the repository
-2. Open `GreatSage.sln` in Visual Studio
-3. Ensure `greeting.wav` is in the project root
-4. Press `F5` to build and run
-
-## CI Status
-
-<!-- Add screenshot of green GitHub Actions check here -->
-
-## Requirements
-
-- .NET 6.0 or later
-- Visual Studio 2022
-- Windows (required for `System.Media.SoundPlayer`)
+## 📁 Project Structure
+├── Program.cs # Entry point – creates CyberBot and calls Start()
+├── CyberBot.cs # Conversation loop, name validation, keyword matching
+├── DisplayHelper.cs # Console colours, ASCII art, typing effect, dividers, error prompts
+├── AudioHelper.cs # WAV playback with defensive file checking and automatic property
+├── greeting.wav # Voice greeting (PCM WAV format)
+└── .github/
+└── workflows/
+└── dotnet.yml # CI build verification

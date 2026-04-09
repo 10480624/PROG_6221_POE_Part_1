@@ -18,7 +18,7 @@ namespace Raphael
         public void ShowHeader()
         {
             Console.Clear();
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.White;
 
             Console.WriteLine(@"
   _____            _____  _    _          ______ _      
@@ -53,6 +53,16 @@ namespace Raphael
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write("What is your name? ");
+            Console.ResetColor();
+        }
+
+        /// <summary>
+        /// Displays an error when the user enters an empty name.
+        /// </summary>
+        public void ShowNameError()
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("(!) Name cannot be empty. Please enter your name to continue.");
             Console.ResetColor();
         }
 
@@ -130,7 +140,7 @@ namespace Raphael
         /// </summary>
         public void DrawDivider()
         {
-            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine(new string('=', 60));
             Console.ResetColor();
         }

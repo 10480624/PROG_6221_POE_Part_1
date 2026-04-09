@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Raphael")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f81a30c9983440a00339a4f77d1d0fa2cf203b00")]
 [assembly: System.Reflection.AssemblyProductAttribute("Raphael")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Raphael")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,10 +1,16 @@
+using Raphael;
+
 namespace Raphael
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            // Entry point - more to come
+            // Initialise the chatbot system
+            CyberBot raphael = new CyberBot();
+
+            // Launch the application sequence
+            raphael.Start();
         }
     }
 }

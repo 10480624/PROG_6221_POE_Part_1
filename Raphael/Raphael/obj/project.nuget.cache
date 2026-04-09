@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "87LItiQBn3Y=",
+  "dgSpecHash": "6Tg4EVd8TfE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Student\\Documents\\PROG62121\\Raphael\\Raphael\\Raphael.csproj",
+  "projectFilePath": "C:\\Users\\Student\\Documents\\PROG62121\\PROG_6221_POE_Part_1\\Raphael\\Raphael\\Raphael.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Student\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.22.1\\microsoft.visualstudio.azure.containers.tools.targets.1.22.1.nupkg.sha512"
+    "C:\\Users\\Student\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.22.1\\microsoft.visualstudio.azure.containers.tools.targets.1.22.1.nupkg.sha512",
+    "C:\\Users\\Student\\.nuget\\packages\\system.windows.extensions\\10.0.5\\system.windows.extensions.10.0.5.nupkg.sha512"
   ],
   "logs": []
 }

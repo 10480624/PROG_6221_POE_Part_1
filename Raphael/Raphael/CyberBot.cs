@@ -10,7 +10,7 @@ namespace Raphael
     {
         // POE REQUIREMENT: Automatic properties
         public string BotName { get; set; }
-        public string UserName { get; set; }
+        public string? UserName { get; set; }
 
         // Private helpers – readonly for discipline
         private readonly DisplayHelper _display;
@@ -60,10 +60,8 @@ namespace Raphael
                 }
                 else
                 {
-                    // Direct handling of invalid input – shows rubric awareness
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("(!) Name cannot be empty. Please enter your name to continue.");
-                    Console.ResetColor();
+                    // Delegates error display to DisplayHelper – keeps CyberBot clean
+                    _display.ShowNameError();
                 }
             }
 
@@ -96,7 +94,8 @@ namespace Raphael
                 }
                 else
                 {
-                    string response = GetResponse(cleanInput);
+                    // Pass raw input – GetResponse does its own cleaning
+                    string response = GetResponse(userInput);
                     _display.ShowBotResponse(response);
                 }
             }
@@ -104,7 +103,7 @@ namespace Raphael
 
         /// <summary>
         /// Returns an appropriate cybersecurity response based on user input.
-        /// Cleaning is done inside the method for self‑contained safety.
+        /// Cleaning is done inside the method for self-contained safety.
         /// </summary>
         /// <param name="input">Raw user input.</param>
         public string GetResponse(string input)
@@ -122,7 +121,7 @@ namespace Raphael
             if (cleanInput.Contains("purpose") || cleanInput.Contains("who are you"))
                 return "I am Raphael, an assistant developed for the South African Cybersecurity Awareness Campaign. My purpose is to help citizens recognise and avoid cyber threats.";
 
-            if (cleanInput.Contains("what can i ask") || cleanInput.Contains("topics") || cleanInput.Contains("help"))
+            if (cleanInput.Contains("what can i ask") || cleanInput.Contains("topics"))
                 return "You can ask me about passwords, phishing, safe browsing, malware, and more. Where would you like to start?";
 
             // Cybersecurity topics – South African context included
@@ -133,7 +132,7 @@ namespace Raphael
                 return "Phishing is a common threat in South Africa. Never click links in unexpected emails or SMSs. Banks and SARS will never ask for your PIN or password via a link.";
 
             if (cleanInput.Contains("safe browsing") || cleanInput.Contains("browsing"))
-                return "Stick to websites with 'HTTPS' and the padlock icon. Avoid banking or shopping on public Wi‑Fi unless you use a VPN.";
+                return "Stick to websites with HTTPS and the padlock icon. Avoid banking or shopping on public Wi-Fi unless you use a VPN.";
 
             if (cleanInput.Contains("malware") || cleanInput.Contains("virus"))
                 return "Malware can steal your data or lock your files. Keep your antivirus updated and never download attachments from unknown senders.";
