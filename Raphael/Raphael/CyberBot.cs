@@ -3,34 +3,29 @@ using System;
 namespace Raphael
 {
     /// <summary>
-    /// Core chatbot class. Handles conversation logic,
-    /// user interaction, and response generation.
+    /// The brain of the operation. Talks to the user, figures out what they're asking,
+    /// and spits out cybersecurity advice with a South African flavour.
     /// </summary>
     internal class CyberBot
     {
-        // POE REQUIREMENT: Automatic properties
-        public string BotName { get; set; }
-        public string? UserName { get; set; }
+        // Automatic properties – POE requirement ticked. Start with empty strings so no null drama.
+        public string BotName { get; set; } = string.Empty;
+        public string UserName { get; set; } = string.Empty;
 
-        // Private helpers – readonly for discipline
+        // Helpers – marked readonly because we set 'em once and leave 'em alone
         private readonly DisplayHelper _display;
         private readonly AudioHelper _audio;
 
-        /// <summary>
-        /// Constructor: initialises bot name and helper objects.
-        /// </summary>
         public CyberBot()
         {
-            BotName = "Raphael";
+            BotName = "Raphael"; // The bot's name, obviously
             _display = new DisplayHelper();
             _audio = new AudioHelper();
         }
 
-        /// <summary>
-        /// Starts the chatbot application.
-        /// </summary>
         public void Start()
         {
+            // Audio might fail – that's fine, we handle it and keep moving
             _audio.PlayGreeting();
             _display.ShowHeader();
             _display.ShowWelcomeMessage();
@@ -42,7 +37,7 @@ namespace Raphael
         }
 
         /// <summary>
-        /// Prompts the user for their name with a validation loop.
+        /// Keeps asking until they give us something that isn't blank.
         /// </summary>
         public void AskForUserName()
         {
@@ -51,7 +46,7 @@ namespace Raphael
             while (!validName)
             {
                 _display.ShowNamePrompt();
-                string input = Console.ReadLine();
+                string? input = Console.ReadLine(); // ReadLine can return null, so we use string?
 
                 if (!string.IsNullOrWhiteSpace(input))
                 {
@@ -60,7 +55,7 @@ namespace Raphael
                 }
                 else
                 {
-                    // Delegates error display to DisplayHelper – keeps CyberBot clean
+                    // Let DisplayHelper handle the yelling – keeps CyberBot clean
                     _display.ShowNameError();
                 }
             }
@@ -69,7 +64,7 @@ namespace Raphael
         }
 
         /// <summary>
-        /// Main conversation loop. Runs until the user types 'exit', 'quit', or 'goodbye'.
+        /// The main chat loop. Runs until the user says exit, quit, or goodbye.
         /// </summary>
         public void RunChatLoop()
         {
@@ -78,7 +73,7 @@ namespace Raphael
             while (keepRunning)
             {
                 _display.ShowChatPrompt(UserName);
-                string userInput = Console.ReadLine();
+                string? userInput = Console.ReadLine();
 
                 if (string.IsNullOrWhiteSpace(userInput))
                 {
@@ -94,7 +89,6 @@ namespace Raphael
                 }
                 else
                 {
-                    // Pass raw input – GetResponse does its own cleaning
                     string response = GetResponse(userInput);
                     _display.ShowBotResponse(response);
                 }
@@ -102,43 +96,43 @@ namespace Raphael
         }
 
         /// <summary>
-        /// Returns an appropriate cybersecurity response based on user input.
-        /// Cleaning is done inside the method for self-contained safety.
+        /// Takes whatever the user typed, cleans it up, and tries to match it to a topic.
+        /// Returns a helpful (and hopefully not boring) cybersecurity response.
         /// </summary>
-        /// <param name="input">Raw user input.</param>
         public string GetResponse(string input)
         {
-            // Defensive cleaning – ensures method works even if called incorrectly
+            // Clean it ourselves so we don't have to trust the caller got it right
             string cleanInput = input?.ToLower().Trim() ?? string.Empty;
 
             if (string.IsNullOrEmpty(cleanInput))
                 return "I didn't catch that. Could you say it again?";
 
-            // Conversational / required prompts
+            // Basic chit-chat
             if (cleanInput.Contains("how are you"))
-                return "I'm fully operational and ready to assist with your online safety.";
+                return "I'm fully operational and ready to help you stay safe online. What can I do for you?";
 
             if (cleanInput.Contains("purpose") || cleanInput.Contains("who are you"))
-                return "I am Raphael, an assistant developed for the South African Cybersecurity Awareness Campaign. My purpose is to help citizens recognise and avoid cyber threats.";
+                return "I'm Raphael, built for the South African Cybersecurity Awareness Campaign. My job is to help everyday South Africans spot scams and protect themselves online.";
 
             if (cleanInput.Contains("what can i ask") || cleanInput.Contains("topics"))
-                return "You can ask me about passwords, phishing, safe browsing, malware, and more. Where would you like to start?";
+                return "You can ask me about passwords, phishing, safe browsing, malware – basically anything that helps you not get hacked. Where do you want to start?";
 
-            // Cybersecurity topics – South African context included
+            // Cybersecurity topics – with SA context sprinkled in
             if (cleanInput.Contains("password"))
-                return "Use strong, unique passwords for each account. Avoid personal info like your birthdate. A password manager can help keep your credentials secure.";
+                return "Use strong, unique passwords for every account. Don't use your ID number, birthdate, or '123456'. A password manager is your best friend here.";
 
             if (cleanInput.Contains("phishing"))
-                return "Phishing is a common threat in South Africa. Never click links in unexpected emails or SMSs. Banks and SARS will never ask for your PIN or password via a link.";
+                return "Phishing is huge in South Africa right now. Scammers pretend to be your bank, SARS, or even your boss. Never click links in weird SMSs or emails. If it feels off, it probably is.";
 
             if (cleanInput.Contains("safe browsing") || cleanInput.Contains("browsing"))
-                return "Stick to websites with HTTPS and the padlock icon. Avoid banking or shopping on public Wi-Fi unless you use a VPN.";
+                return "Look for the little padlock and 'HTTPS' in the address bar. Don't do online banking on free mall WiFi – that's asking for trouble. Use your mobile data or a VPN if you must.";
 
             if (cleanInput.Contains("malware") || cleanInput.Contains("virus"))
-                return "Malware can steal your data or lock your files. Keep your antivirus updated and never download attachments from unknown senders.";
+                return "Malware can lock your files or steal your info. Keep your antivirus updated and never download attachments from people you don't know. Yes, even if it says 'Invoice'.";
 
-            // Fallback
-            return "I'm not sure about that. Try asking about 'passwords', 'phishing', or 'safe browsing'.";
+            // If nothing matched, give a nudge toward topics we actually know
+            return "I'm not sure about that one. Try asking me about 'passwords', 'phishing', or 'safe browsing' – those I can definitely help with.";
         }
     }
+}
 }
