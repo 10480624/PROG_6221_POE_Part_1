@@ -123,14 +123,14 @@ namespace Raphael
         }
 
         /// <summary>
-        /// Prints text character by character to simulate typing.
+        /// Prints text one character at a time – makes it feel like the bot is actually typing.
         /// </summary>
         public void TypeText(string text)
         {
             foreach (char c in text)
             {
                 Console.Write(c);
-                Thread.Sleep(TypingDelay);
+                Thread.Sleep(TypingDelay);  // 30ms feels natural, not too slow
             }
             Console.WriteLine();
         }
