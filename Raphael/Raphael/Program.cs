@@ -1,5 +1,3 @@
-using Raphael;
-
 namespace Raphael
 {
     internal class Program
