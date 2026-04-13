@@ -277,7 +277,16 @@ Submission Checklist (Part 1)
 
 ---
 
+Submission Links 
+
+GIT
+https://github.com/10480624/PROG_6221_POE_Part_1.git
+
+Youtube
+https://youtu.be/IPQkA_z-obw
+
 End of Development Log
 ```
 
-This merged version includes both the high‑level decision log you shared and the detailed step‑by‑step history we built together. It's ready to drop into your README.
+
+
